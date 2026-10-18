@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 5 - Patient DB</title>
+    <title>Lab 5</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- TODO: insert button, query textarea, submit button, response area -->
+    <!-- Claude (https://claude.ai) was used to help write this file. -->
+    <main>
+        <h1 id="page-title"></h1>
+
+        <section>
+            <h2 id="insert-heading"></h2>
+            <p id="insert-description"></p>
+            <button id="insert-button" type="button"></button>
+        </section>
+
+        <section>
+            <h2 id="query-heading"></h2>
+            <p id="query-description"></p>
+            <textarea id="query-input" rows="5"></textarea>
+            <button id="submit-button" type="button"></button>
+        </section>
+
+        <section>
+            <h2 id="response-heading"></h2>
+            <div id="response-output"></div>
+        </section>
+    </main>
 
     <script src="lang/en/en.js"></script>
+    <script src="js/config.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

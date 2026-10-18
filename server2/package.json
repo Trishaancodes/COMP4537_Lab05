@@ -4,8 +4,10 @@
   "description": "COMP4537 Lab 5 API server",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node --env-file=.env server.js"
   },
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "mysql2": "^3.24.6"
+  }
 }

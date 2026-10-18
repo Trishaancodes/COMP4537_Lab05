@@ -1,1 +1,61 @@
 /* Styles for the Lab 5 client */
+/* Claude (https://claude.ai) was used to help write this file. */
+
+body {
+    font-family: system-ui, sans-serif;
+    background: #f5f6f8;
+    color: #222;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    text-align: left;
+}
+
+th {
+    background: #eef;
+}
+
+.success {
+    color: #1a7f37;
+}
+
+.error {
+    color: #c62828;
+}
