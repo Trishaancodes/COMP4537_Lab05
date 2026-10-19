@@ -1,13 +1,14 @@
 {
-  "name": "lab5-server2",
-  "version": "1.0.0",
-  "description": "COMP4537 Lab 5 API server",
-  "main": "server.js",
-  "scripts": {
-    "start": "node --env-file=.env server.js"
-  },
-  "license": "ISC",
-  "dependencies": {
-    "mysql2": "^3.24.6"
-  }
+    "name": "lab5-server2",
+    "version": "1.0.0",
+    "description": "COMP4537 Lab 5 API server",
+    "main": "server.js",
+    "scripts": {
+        "start-dev": "node --env-file=.env server.js",
+        "start": "node server.js"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "mysql2": "^3.24.6"
+    }
 }
