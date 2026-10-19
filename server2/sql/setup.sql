@@ -1,15 +1,14 @@
--- Run once as an admin user (e.g. root) on the MySQL/MariaDB server.
--- Claude (https://claude.ai) was used to help write this file.
--- Principle of Least Privilege: two users, neither can DROP, DELETE or UPDATE.
+DROP DATABASE IF EXISTS comp4537_lab5;
+DROP USER IF EXISTS 'lab5_writer'@'%';
+DROP USER IF EXISTS 'lab5_reader'@'%';
 
-CREATE DATABASE IF NOT EXISTS lab5;
+CREATE DATABASE comp4537_lab5;
+USE comp4537_lab5;
 
 -- Writer: used for POST requests (create the table if missing + insert rows)
-CREATE USER IF NOT EXISTS 'lab5_writer'@'%' IDENTIFIED BY 'change_me_writer';
-GRANT CREATE, INSERT, SELECT ON lab5.* TO 'lab5_writer'@'%';
+CREATE USER 'lab5_writer'@'%' IDENTIFIED BY 'change_me_writer';
+GRANT CREATE, INSERT, SELECT ON comp4537_lab5.* TO 'lab5_writer'@'%';
 
 -- Reader: used for GET requests (SELECT only)
-CREATE USER IF NOT EXISTS 'lab5_reader'@'%' IDENTIFIED BY 'change_me_reader';
-GRANT SELECT ON lab5.* TO 'lab5_reader'@'%';
-
-FLUSH PRIVILEGES;
+CREATE USER 'lab5_reader'@'%' IDENTIFIED BY 'change_me_reader';
+GRANT SELECT ON comp4537_lab5.* TO 'lab5_reader'@'%';
